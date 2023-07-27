@@ -15,6 +15,7 @@
         />
 
     <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/second_guideline"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -30,6 +31,7 @@
         />
 
     <ImageView
+        android:id="@+id/image_banner"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -76,6 +78,7 @@
         app:layout_constraintTop_toBottomOf="@+id/title_tv" />
 
     <TextView
+        android:id="@+id/description_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="6dp"
@@ -84,6 +87,15 @@
         android:textSize="15dp"
         app:layout_constraintStart_toStartOf="@+id/guideline_start"
         app:layout_constraintTop_toBottomOf="@+id/language_tv" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/list_fragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/second_guideline"
+        app:layout_constraintBottom_toBottomOf="parent"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
